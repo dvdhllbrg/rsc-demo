@@ -1,6 +1,6 @@
 ## Running
 
-To run a specific project, `cd` into each folder and run `npm install` followed by `npm run dev`.
+To run a specific project, `cd` into each folder and run `pnpm install` followed by `pnpm dev`.
 
 
 ## "Production" deploys
