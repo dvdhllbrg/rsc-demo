@@ -1,0 +1,20 @@
+import sleep from "../utils/sleep";
+import Product from "/components/Product";
+
+export async function getProducts() {
+  const res = await fetch("https://fakestoreapi.com/products");
+  // await sleep(2000);
+  return res.json();
+}
+
+export default async function Home() {
+  const products = await getProducts();
+
+  return (
+    <div className="w-full flex flex-row flex-wrap gap-4">
+      {products.map((product) => (
+        <Product key={product.id} {...product} />
+      ))}
+    </div>
+  );
+}

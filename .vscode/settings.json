@@ -1,0 +1,7 @@
+{
+  "eslint.workingDirectories": [
+      "./spa",
+      "./ssr",
+      "./rsc"
+  ]
+}
